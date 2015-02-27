@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<jppc:section xmlns:jppc="http://xml.juniper.net/jppc" name="check_sysservice" mode="ftp3" conf="system.conf" target="10.216.193.114" ts="2015-02-23T16:06:41+05:30">
+  <display-xml>
+</display-xml>
+  <system>
+        <services>
+            <ftp>
+                <connection-limit>200</connection-limit>
+                <rate-limit>214</rate-limit>
+            </ftp>
+            <ssh>
+                <root-login>allow</root-login>
+            </ssh>
+            <telnet>
+            </telnet>
+            <netconf>
+                <ssh>
+                </ssh>
+            </netconf>
+        </services>
+    </system>
+</jppc:section>

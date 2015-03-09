@@ -1,2 +1,2 @@
 # jsnap-slax-test-framwork
-Testing framework for JSnap-slax
+Unit Tests for JSnap-slax

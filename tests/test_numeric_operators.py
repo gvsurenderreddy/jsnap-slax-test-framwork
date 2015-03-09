@@ -82,20 +82,18 @@ class TestNumericOperators(unittest.TestCase):
             self.assertNotEqual(out.find("Invalid expression"), -1)
 
 
-if __name__ == '__main__':
-
-        router = "10.216.193.114"
-        suite = unittest.TestSuite()
-        suite.addTest(TestNumericOperators("test_is_lt_passed", router))
-        suite.addTest(TestNumericOperators("test_is_lt_failed", router))
-        suite.addTest(TestNumericOperators("test_is_lt_error", router))
-        suite.addTest(TestNumericOperators("test_is_gt_passed", router))
-        suite.addTest(TestNumericOperators("test_is_gt_failed", router))
-        suite.addTest(TestNumericOperators("test_is_gt_error", router))
-        suite.addTest(TestNumericOperators("test_in_range_passed", router))
-        suite.addTest(TestNumericOperators("test_in_range_failed", router))
-        suite.addTest(TestNumericOperators("test_in_range_error", router))
-        suite.addTest(TestNumericOperators("test_not_range_passed", router))
-        suite.addTest(TestNumericOperators("test_not_range_failed", router))
-        suite.addTest(TestNumericOperators("test_not_range_error", router))
-        unittest.TextTestRunner().run(suite)
+router = "10.216.193.114"
+suite = unittest.TestSuite()
+suite.addTest(TestNumericOperators("test_is_lt_passed", router))
+suite.addTest(TestNumericOperators("test_is_lt_failed", router))
+suite.addTest(TestNumericOperators("test_is_lt_error", router))
+suite.addTest(TestNumericOperators("test_is_gt_passed", router))
+suite.addTest(TestNumericOperators("test_is_gt_failed", router))
+suite.addTest(TestNumericOperators("test_is_gt_error", router))
+suite.addTest(TestNumericOperators("test_in_range_passed", router))
+suite.addTest(TestNumericOperators("test_in_range_failed", router))
+suite.addTest(TestNumericOperators("test_in_range_error", router))
+suite.addTest(TestNumericOperators("test_not_range_passed", router))
+suite.addTest(TestNumericOperators("test_not_range_failed", router))
+suite.addTest(TestNumericOperators("test_not_range_error", router))
+unittest.TextTestRunner().run(suite)

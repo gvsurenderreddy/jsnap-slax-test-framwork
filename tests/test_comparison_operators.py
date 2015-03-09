@@ -87,20 +87,18 @@ class TestComparisionOperators(unittest.TestCase):
 
 
 
-if __name__ == '__main__':
-
-        router = "10.216.193.114"
-        suite = unittest.TestSuite()
-        suite.addTest(TestComparisionOperators("test_no_diff_passed", router))
-        suite.addTest(TestComparisionOperators("test_no_diff_failed", router))
-        suite.addTest(TestComparisionOperators("test_no_diff_skipped", router))
-        suite.addTest(TestComparisionOperators("test_list_not_less_passed", router))
-        suite.addTest(TestComparisionOperators("test_list_not_less_failed", router))
-        suite.addTest(TestComparisionOperators("test_list_not_less_skipped", router))
-        suite.addTest(TestComparisionOperators("test_list_not_more_passed", router))
-        suite.addTest(TestComparisionOperators("test_list_not_more_failed", router))
-        suite.addTest(TestComparisionOperators("test_list_not_more_skipped", router))
-        suite.addTest(TestComparisionOperators("test_delta_passed", router))
-        suite.addTest(TestComparisionOperators("test_delta_failed", router))
-        suite.addTest(TestComparisionOperators("test_delta_skipped", router))
-        unittest.TextTestRunner().run(suite)
+router = "10.216.193.114"
+suite = unittest.TestSuite()
+suite.addTest(TestComparisionOperators("test_no_diff_passed", router))
+suite.addTest(TestComparisionOperators("test_no_diff_failed", router))
+suite.addTest(TestComparisionOperators("test_no_diff_skipped", router))
+suite.addTest(TestComparisionOperators("test_list_not_less_passed", router))
+suite.addTest(TestComparisionOperators("test_list_not_less_failed", router))
+suite.addTest(TestComparisionOperators("test_list_not_less_skipped", router))
+suite.addTest(TestComparisionOperators("test_list_not_more_passed", router))
+suite.addTest(TestComparisionOperators("test_list_not_more_failed", router))
+suite.addTest(TestComparisionOperators("test_list_not_more_skipped", router))
+suite.addTest(TestComparisionOperators("test_delta_passed", router))
+suite.addTest(TestComparisionOperators("test_delta_failed", router))
+suite.addTest(TestComparisionOperators("test_delta_skipped", router))
+unittest.TextTestRunner().run(suite)

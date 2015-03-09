@@ -64,18 +64,15 @@ class TestStringOperators(unittest.TestCase):
             self.assertNotEqual(out.find("Invalid number of arguments"), -1)
 
 
-
-if __name__ == '__main__':
-
-        router = "10.216.193.114"
-        suite = unittest.TestSuite()
-        suite.addTest(TestStringOperators("test_contains_passed", router))
-        suite.addTest(TestStringOperators("test_contains_failed", router))
-        suite.addTest(TestStringOperators("test_contains_error", router))
-        suite.addTest(TestStringOperators("test_is_in_passed", router))
-        suite.addTest(TestStringOperators("test_is_in_failed", router))
-        suite.addTest(TestStringOperators("test_not_in_passed", router))
-        suite.addTest(TestStringOperators("test_not_in_failed", router))
-        suite.addTest(TestStringOperators("test_is_in_error", router))
-        suite.addTest(TestStringOperators("test_not_in_error", router))
-        unittest.TextTestRunner().run(suite)
+router = "10.216.193.114"
+suite = unittest.TestSuite()
+suite.addTest(TestStringOperators("test_contains_passed", router))
+suite.addTest(TestStringOperators("test_contains_failed", router))
+suite.addTest(TestStringOperators("test_contains_error", router))
+suite.addTest(TestStringOperators("test_is_in_passed", router))
+suite.addTest(TestStringOperators("test_is_in_failed", router))
+suite.addTest(TestStringOperators("test_not_in_passed", router))
+suite.addTest(TestStringOperators("test_not_in_failed", router))
+suite.addTest(TestStringOperators("test_is_in_error", router))
+suite.addTest(TestStringOperators("test_not_in_error", router))
+unittest.TextTestRunner().run(suite)
